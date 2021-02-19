@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-image: url(/css/assets/pexels-dmitry-zvolskiy-1576369.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: #1a191f;
+  opacity: 0.6;
+}
+
+.card{
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  background-color: #0e1229;
+  height: 600px;
+  width: 60%;
+  border-radius: 5px;
+  flex-direction: column;
+  z-index: 100;
+  opacity: 0.9;
+  box-shadow: 3px 3px 4px 4px rgb(54, 52, 70);
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 150px;
+  width: 90%;
+  margin-bottom: 50px;
+  border-bottom: 1px solid rgb(247, 210, 132);
+}
+
+input[type='text'] {
+  height: 50px;
+  width: 250px;
+  background-color: #252942;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  border: none;
+  border-radius: 3px;
+  padding-left: 15px;
+  border-bottom: 1px rgb(177, 176, 173) solid;
+  color: rgb(255, 255, 255);
+  margin-right: 20px;
+}
+
+input[type='submit'] {
+  height: 48px;
+  width: fit-content;
+  background-color: rgb(247, 210, 132);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+  color: #0e1229;
+}
+
+.display {
+  text-align: left;
+}
+
+p {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+h1 {
+  color: rgb(247, 210, 132);
+  margin-bottom: 15px;
+  font-size: 36px;
+}
+
+.icon{
+  transform: scale(2);
+  margin: 20px;
+}
+
+@media(max-width: 639px) {
+  .input {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  input[type='text'] {
+    margin-right: 0;
+  }
+  input[type='submit'] {
+    width: 250px;
+  }
+}
