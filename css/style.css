@@ -50,6 +50,7 @@ body {
   width: 90%;
   margin-bottom: 50px;
   border-bottom: 1px solid rgb(247, 210, 132);
+  position: relative;
 }
 
 input[type='text'] {
@@ -80,6 +81,18 @@ input[type='submit'] {
   color: #0e1229;
 }
 
+.input small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  color: rgb(223, 81, 81);
+}
+
+.input.error small {
+  visibility: visible;
+}
+
 .display {
   text-align: left;
 }
@@ -89,10 +102,14 @@ p {
   margin-bottom: 20px;
   font-size: 20px;
 }
-h1 {
+.display h1 {
   color: rgb(247, 210, 132);
   margin-bottom: 15px;
   font-size: 36px;
+}
+
+h1 {
+  color: rgb(247, 210, 132);
 }
 
 .icon{
@@ -110,5 +127,9 @@ h1 {
   }
   input[type='submit'] {
     width: 250px;
+  }
+  h1 {
+    font-size: 24px;
+    text-align: center;
   }
 }
